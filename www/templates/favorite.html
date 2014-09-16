@@ -1,0 +1,21 @@
+<ion-view title="Favorite Folder">
+  <ion-content class="has-header">
+  <!--  <div style="padding: 10px;">
+    <h2>{{f.title}}</h2>
+    <p class="small">{{f.description }}</p>
+
+  </div> -->
+
+<ion-list>
+
+      <ion-item ng-repeat="c in contents" class="item-icon-right"
+      href="#/app/content/{{c.id}}">
+          <h2> {{c.title}}
+
+          </h2>
+          <span >{{c.abstract}}</span>
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

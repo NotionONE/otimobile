@@ -1,0 +1,20 @@
+<ion-view title="My Favorites">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="f in favorites" class="item-icon-right"
+      href="#/app/favorites/{{f.id}}">
+          <div>
+            <h2>{{f.title}}
+          
+
+            </h2></div>
+          <span >{{f.description | limitTo: 25}}</span>
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

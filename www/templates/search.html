@@ -1,0 +1,33 @@
+<ion-view title="Search">
+  <ion-content class="has-header">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+
+<div class="list">
+
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Search Keywords" ng-model="crit.ss">
+    </label>
+   
+      <button class="button button-small icon ion-ios7-search" ng-click="search()"></button>
+
+  </div>
+
+</div>
+
+<ion-list>
+
+      <ion-item ng-repeat="c in contents" class="item-icon-right"
+      href="#/app/content/{{c.id}}">
+          <h2> {{c.title}}
+
+          </h2>
+          <span >{{c.abstract }}</span>
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

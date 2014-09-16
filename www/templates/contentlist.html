@@ -1,0 +1,16 @@
+<ion-view title="Search Results">
+  <ion-content class="has-header">
+
+<ion-list>
+
+      <ion-item ng-repeat="c in contents" class="item-icon-right"
+      href="#/app/content/{{c.id}}">
+          <h2> {{c.title}}
+
+          </h2>
+          <span >{{c.abstract}}</span>
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,55 @@
+<ion-view title="Content Item">
+  <ion-content class="has-header">
+  <div class="list card">
+
+  <div class="item ">
+   <!--  <img src="http://ionicframework.com/img/docs/mcfly.jpg"> -->
+    <h2 style="white-space: initial;">{{c.title}}</h2>
+    <p>{{c.date}}</p>
+    <p>{{c.person}}</p>
+  </div>
+
+  <div class="item item-body">
+   <!--  <img class="full-image" src="http://ionicframework.com/img/docs/delorean.jpg"> -->
+    <p>
+     {{c.abstract}}
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+  <!--  
+    <a class="tab-item" href="#" style="color: blue;">
+      <i class="icon ion-chatbox" ></i>
+      Comment
+    </a> -->
+    <a class="tab-item" href="#" style="color: blue;">
+      <i class="icon ion-share" ></i>
+      Share
+    </a>
+     <a class="tab-item" href="#" style="color: blue;">
+      <i class="icon ion-ios7-star-outline" ></i>
+      Favorite
+    </a>
+  </div>
+
+</div>
+
+
+<ion-list>
+ <div class="item item-divider">
+    Attachments
+  </div>
+      <ion-item ng-repeat="f in files" class="item-icon-right">
+           {{f.name}}
+          <i class="icon ion-ios7-download-outline" style="color: blue;"></i>
+
+          </h2>
+          <span >{{f.abstract | limitTo: 25}}</span>
+      </ion-item>
+    </ion-list>
+
+</ion-view>

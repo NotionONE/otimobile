@@ -1,0 +1,21 @@
+/* Empty. Add your own CSS if you like */
+.bar{
+	background-color: #750000 !important;
+	color: #fff !important;
+}
+
+.bar-stable .button.button-icon{
+	color: #fff;
+}
+
+.bar.bar-stable .title{
+	color: #fff;
+}
+
+.bar.bar-stable .back-button{
+	color: #fff;
+}
+
+.secondary-menu{ 
+	margin-top: 20px;
+}

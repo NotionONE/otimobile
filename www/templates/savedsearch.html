@@ -1,0 +1,19 @@
+<ion-view title="Saved Searches">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="s in searches" class="item-icon-right"
+      href="#/app/contentlist">
+          <div>
+            <h2>{{s.title}}
+          
+            </h2></div>
+          <span >{{s.description}}</span>
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

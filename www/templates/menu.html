@@ -1,0 +1,55 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-stable bar-positive">
+      <h1 class="title">Portal Menu</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>        
+     
+        <ion-item nav-clear menu-close href="#/app/favorites">
+          <i class="ion-pin"></i>
+          My Favorites
+        </ion-item>
+
+        <ion-item nav-clear menu-close href="#/app/savedsearch">
+          <i class="ion-filing"></i> 
+          My Saved Searches
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/inbox">
+         <i class="ion-email"></i> 
+         My Inbox
+          <span class="badge badge-assertive">2</span>
+        </ion-item> 
+        
+      </ion-list>
+
+      <ion-list >        
+        <ion-item nav-clear menu-close href="#/app/quicklinks" class="secondary-menu">
+          <i class="ion-link"></i> 
+          Quick Links
+        </ion-item>
+       
+       <ion-item nav-clear menu-close href="#/app/search">
+           <i class="ion-search"></i>
+           Search
+        </ion-item>
+      </ion-list>
+<!-- 
+      <ion-list >        
+       <ion-item nav-clear menu-close class="secondary-menu" ng-click="logout()">
+          <i class="ion-help-circled"></i> 
+          Log Out
+        </ion-item>
+      </ion-list> -->
+
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
